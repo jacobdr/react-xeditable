@@ -28,7 +28,7 @@ var EditableTextField = React.createClass({
 
     render: function() {
     	var empty = this.props.value === "";
-      var id = this.props.id !== "undefined" ? this.props.id : "popover";
+        var id = this.props.id ? this.props.id : "popover";
     	var linkText = empty ? 'Empty' : this.props.value;
     	var linkClass = empty ? 'editable-click editable-empty' : 'editable-click';
         var popover =
