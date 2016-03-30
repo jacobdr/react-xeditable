@@ -31,8 +31,8 @@ var EditableTextField = React.createClass({
         var id = this.props.id ? this.props.id : "popover";
     	var linkText = empty ? 'Empty' : this.props.value;
     	var linkClass = empty ? 'editable-click editable-empty' : 'editable-click';
-        var popover =
-            <Popover id={id}>
+        var popover = (
+             <Popover id='popover'>
                 <form className='form-inline' onSubmit={this.submit}>
                 <Input id={'input'} type='text' ref='input' placeholder='Empty' className='input-sm' defaultValue={this.props.value} />
                 <ButtonToolbar className='editable-buttons'>
@@ -40,10 +40,11 @@ var EditableTextField = React.createClass({
                 <Button bsStyle='default' className='btn-sm' onClick={this.cancel}><i className='glyphicon glyphicon-remove'></i></Button>
                 </ButtonToolbar>
                 </form>
-            </Popover>;
+            </Popover>
+        );
 
         return (
-            <OverlayTrigger ref='overlay' trigger='click' rootClose={true} placement='bottom' overlay={popover}>
+            <OverlayTrigger id={'OverlayTrigger'} ref='overlay' trigger='click' rootClose={true} placement='bottom' overlay={popover}>
                 <a href='javascript:;' className={linkClass}>{linkText}</a>
             </OverlayTrigger>
         );

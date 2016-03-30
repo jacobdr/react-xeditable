@@ -1,7 +1,5 @@
 'use strict';
-
-var EditableTextField = require('./lib/EditableTextField.jsx');
-
+import {EditableTextField} from './lib/EditableTextField'
 
 module.exports = {
 	EditableTextField : EditableTextField
