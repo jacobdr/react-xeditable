@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/kodbiro/react-xeditable.git"
   },
-  "keywords" : [
+  "keywords": [
     "react-component",
     "react",
     "x-editable",
@@ -28,12 +28,19 @@
   "bugs": {
     "url": "https://github.com/kodbiro/react-xeditable/issues"
   },
-  "browserify": {"transform": ["reactify"]},
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
   "homepage": "https://github.com/kodbiro/react-xeditable",
   "devDependencies": {
     "beefy": "^2.1.5",
     "browserify": "^10.2.4",
     "gulp": "^3.9.0",
+    "react": "^0.14.8",
+    "react-bootstrap": "^0.28.4",
+    "react-dom": "^0.14.8",
     "reactify": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
