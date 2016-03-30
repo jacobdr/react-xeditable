@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "examples": "./node_modules/beefy/bin/beefy examples/app.jsx  --index=examples/index.html -- -t reactify",
-    "build": "babel lib/ --presets es2015,react --out-dir dist/."
+    "examples": "./node_modules/beefy/bin/beefy examples/app.jsx  --index=examples/index.html -- -t reactify"
   },
   "repository": {
     "type": "git",
